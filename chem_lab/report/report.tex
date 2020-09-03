@@ -1,0 +1,108 @@
+\documentclass{article}
+% For including other files
+\usepackage{newclude}
+\usepackage{float}
+\usepackage{graphicx}
+
+% Geometry and margins stuff
+\usepackage[%
+	top=1in,
+	left=1in,
+	right=1in,
+	bottom=1in ]{geometry}
+% Formatting requirements
+\usepackage{microtype}
+\usepackage{gensymb}
+\usepackage{times}
+\usepackage{newtxmath} % math font, pairs well with times
+\usepackage{setspace}
+\doublespacing%
+\usepackage{amsmath}
+	\numberwithin{equation}{section}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage[labelfont=bf]{caption} % for tables and figures having bold titles
+\usepackage{chemformula} % for chemical formulae
+
+% Referencing and bibliography
+\usepackage{cleveref}
+\usepackage[
+	backend=biber,
+	style=numeric,
+	]{biblatex}
+\addbibresource{cited.bib}
+\addbibresource{/home/nelson/tex/bib/references.bib}
+
+% For including code
+\usepackage{xcolor}
+	\definecolor{codegreen}{rgb}{0,0.6,0}
+	\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+	\definecolor{codepurple}{rgb}{0.58,0,0.82}
+	\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+	\definecolor{emphred}{rgb}{1,0,0,0}
+\usepackage{listings}
+	\renewcommand{\lstlistingname}{Program}
+	\lstdefinestyle{mystyle}{
+	    backgroundcolor=\color{backcolour},
+	    commentstyle=\color{codegreen},
+	    keywordstyle=\color{magenta},
+	    numberstyle=\tiny\color{codegray},
+	    stringstyle=\color{codepurple},
+	    basicstyle=\ttfamily\footnotesize,
+	    breakatwhitespace=false,
+	    breaklines=true,
+	    captionpos=b,
+	    keepspaces=true,
+	    numbers=left,
+	    numbersep=5pt,
+	    showspaces=false,
+	    showstringspaces=false,
+	    showtabs=false,
+	    tabsize=2
+	}
+
+	\lstset{style=mystyle}
+
+% For better control of units
+\usepackage{siunitx}
+
+
+% Formatting section titles and shit
+\usepackage[pagestyles]{titlesec}
+	% Package for rebuilding section headers styles and such
+	% See CTAN for documentation
+	\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}{}
+	\titleformat{\subsection}{\normalfont\itshape}{\thesubsection}{1em}{}{}
+
+% start the document
+\begin{document}
+
+% TITLE PAGE
+\begin{center}
+HEAT OF REACTIONS\\
+AND HESS'S LAW\\
+CHMY 141--111\\
+TA:\@ Patrick Anderson\\
+4 Nov 2019
+\end{center}
+\newpage
+
+%%%%
+% Some shortenings
+\newcommand{\hcl}{\ch{HCl}\space}
+\newcommand{\koh}{\ch{KOH}\space}
+
+%%%%%%%%
+
+\input{introduction.tex}
+\input{procedure}
+\input{data_tables.tex}
+\input{analysis.tex}
+\input{conclusion.tex}
+\newpage
+\printbibliography
+\vfill
+
+
+Submitted by Nelson Goldsworth
+\end{document}

@@ -1,0 +1,72 @@
+\section{Analysis and Interpretation}
+
+The three graphs are mostly similar in shape.
+\Cref{fig:partI}, \Cref{fig:partII},  and \Cref{fig:partIIIb} all show a period of low temperature,
+followed by a short period of increasing temperature, then followed by a plateau at a higher temperature.
+This commonality between the three, and that temperature is increasing in each, 
+shows that energy is being released into the solution by similar mechanism in each associated reaction.
+\Cref{fig:partIIIb}, while it looks more jagged and random (due to $y$-axis scaling),
+shows that the temperature of the \koh stayed roughly the same
+during the two minutes during which nothing was added to the solution --the expected result. 
+
+The data in \Cref{tab:main} was gathered from all six groups completing the experiment. 
+In each part, the amount of \koh was determined via a molar mass conversion ratio:
+\begin{subequations}
+\begin{eqnarray}
+\textrm{mass \koh} \times \frac{1}{\textrm{molar mass of \koh}} &= \textrm{amount \koh}\label{eq:molmass}\\
+\SI{2.991}{g} \times \frac{\SI{1}{mol}}{\SI{56.1053}{g}} &= \SI{0.05331}{mol}\label{eq:molarmassnums}\\
+\si{g} \times \frac{\si{mol}}{\si{g}} = \si{mol}\label{eq:molarmassunits}
+\end{eqnarray}
+\end{subequations}
+where \eqref{eq:molmass} describes the general computation,
+\eqref{eq:molarmassnums} is a sample calculation,
+and \eqref{eq:molarmassunits} is a unit analysis of the computation.
+The heat of a reaction is given by
+\begin{subequations}
+\begin{eqnarray}
+Q = m\cdot c\cdot\Delta T = \left(\rho \cdot V\right)\cdot c \Delta T \label{eq:mcat}\\
+1943.\space\si{J} = (\SI{1}{g/mL} \cdot \SI{100.0}{mL})
+		\cdot \frac{4.184 \si{J}}{\si{g\cdot\degreeCelsius}}\label{eq:mcatsamp}
+		\cdot \SI{4.644}{\degreeCelsius}\\
+\si{Joule}=\left(\frac{\si{g}}{\si{mL}} \cdot \si{mL} \right)\cdot \frac{\si{J}}{\si{g\cdot\degreeCelsius}} \cdot \si{\degreeCelsius}\label{eq:mcatunits}
+\end{eqnarray}
+\end{subequations}
+Where, in \eqref{eq:mcat}, $Q$ is the heat in joules, $m$ is the mass (obtained
+from the solution volume $V$ and the density of water:$\rho = \SI{1}{g/mL}$),
+$c$ is the specific heat capacity of water, and $\Delta T$ is the change in
+temperature over the course of the reaction. \eqref{eq:mcatsamp} is a sample
+calculation, and \eqref{eq:mcatunits} is the unit analysis.
+
+The heat per mole of \koh is determined by diving the $Q$
+in \eqref{eq:mcat} and dividing by the number of moles of \koh present in that reaction.
+This turns out as:
+\begin{subequations}
+\begin{eqnarray}
+\textrm{Heat per mol KOH} = \frac{Q}{\textrm{moles KOH}}\label{eq:permol}\\
+36450.\quad \space\si{\joule\per\mol} = \frac{1943.\quad\si{\joule}}{\SI{0.05531}{\mol}}\label{eq:permolsamp}\\
+\si{\joule\per\mol} = \frac{\si{\joule}}{\si{\mol}}\label{eq:permolunits}
+\end{eqnarray}
+\end{subequations}
+Where \eqref{eq:permol} is the general computation,
+\eqref{eq:permolsamp} is a sample calculation,
+and \eqref{eq:permolunits} is a unit analysis.
+
+In \Cref{tab:main}, Group 6 is the author's groups, data.
+Compared to the other groups' data, group 6's data fits well with the linear relationship 
+shown in \Cref{fig:lin}. Overall, the linear fit produces an equation of
+\begin{equation}\label{eq:lin}
+	Q(n) = 95910n - 160.122\\
+\end{equation}
+where $Q$ is the heat evolved (in joules) by a starting amount of $n$ moles of \koh.
+
+It appears that the average heights of the orange and green lines add together to produce the average height of the blue line,
+meaning that the heats from the Part I reactions plus the heats from the Part III reactions are about equivalent to the heats produced by the Part II reaction. 
+This makes sense, as the chemical reactions are similar in each of the three parts, but just involve a different state of the same substances.
+Parts I and III begin and finish, respectively, in the same state that Part II begins and ends. 
+
+
+
+
+
+	
+
