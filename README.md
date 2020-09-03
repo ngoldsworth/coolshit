@@ -1,2 +1,3 @@
 # coolshit
-Sample of git for bro
+
+This is a repo for some really cool shit.
